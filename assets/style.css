@@ -1,0 +1,52 @@
+:root {
+    --dustyblue: rgb(103, 115, 131);
+    --sand: rgb(169, 159, 150);
+    --vanilla: rgb(237, 230, 222);
+    --radius: 5%;
+}
+
+* {
+    padding: 30px 30px;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+header {
+    height: 25%;
+    width: 100%;
+    background-color:var(--dustyblue) ;
+}
+
+header h1 {
+    font-size: 300%;
+}
+
+main {
+    height:75%;
+    width: 100%;
+    background-color: var(--dustyblue);
+}
+
+.firstweb {
+    
+}
+
+section {
+
+}
+
+section h2 {
+    font-size: 200%;
+} 
+
+footer {
+    height:25%;
+    width: 100%;
+    background-color: var(--dustyblue);
+}
+
+footer h3 {
+    font-size: 200%;
+}
+
+

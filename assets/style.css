@@ -10,23 +10,34 @@
 * {
     padding: 20px 30px;
     box-sizing: border-box;
-    background-color: var(--dustyblue);
     font-family: var(--font-family);
 }
 
-header {
+
+html {
+    background: url(./images/code-language.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+body {
     display: absolute;
+    backdrop-filter: blur(10px);
+}
+
+header {
+    display: flex;
 }
 
 header h1 {
     font-size: 400%;
     background-color: var(--dustyblue);
     color: var(--black-text);
+    border-radius: var(--radius);
 }
 
 nav {
     display: flex;
-    justify-content: right;
+    justify-content: center;
 }
 
 nav a {
@@ -56,10 +67,6 @@ nav a {
     background-color: rgb(167, 206, 203);
 }
 
-
-img {
-    z-index: -1;
-}
 
 main {
     display: flex;
@@ -111,6 +118,14 @@ a.third:hover,
 a.fourth:hover {
     color:var(--vanilla);
     background-color: black;
-    border-radius: 0%;
+    border-radius: 50%;
     font-size: 200%;
+}
+
+a.first:active,
+a.second:active,
+a.third:active,
+a.fourth:active {
+    border-radius: 0%;
+    border: solid 10px rgb(0, 0, 180);
 }

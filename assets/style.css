@@ -2,84 +2,115 @@
     --dustyblue: rgb(103, 115, 131);
     --sand: rgb(169, 159, 150);
     --vanilla: rgb(237, 230, 222);
-    --nav-radius: 20%;
+    --radius: 100%;
     --font-family: monospace;
+    --black-text:black;
 }
 
 * {
-    padding: 30px 30px;
-    margin: auto;
+    padding: 20px 30px;
     box-sizing: border-box;
-    background-color:var(--dustyblue);
+    background-color: var(--dustyblue);
     font-family: var(--font-family);
 }
 
 header {
     display: absolute;
-    height: 25%;
-    width: 100%;
 }
 
 header h1 {
-    font-size: 300%;
+    font-size: 400%;
+    background-color: var(--dustyblue);
+    color: var(--black-text);
 }
 
-header nav  {
-    background-color: var(--sand);
-    border-radius: 10%;
-    align-items: right;
+nav {
+    display: flex;
+    justify-content: right;
 }
 
-header nav a{
+nav a {
+    font-size: 150%;
     text-decoration: none;
-    background-color: var(--vanilla);
-    border-radius: var(--nav-radius) ;
+    color: var(--black-text);
+    border-radius: var(--radius);
     padding: 20px 40px;
-    align-items: right;
+    margin: 0 10px;
+    transition: all 0.5s ease-in-out;
 }
 
-#first {
-    background-color:rgb(149, 173, 182) ;
+
+.first {
+    background-color: rgb(149, 173, 182);
 }
 
-#second {
-    background-color: rgb(203, 179, 191)  ;
+.second {
+    background-color: rgb(203, 179, 191);
 }
 
-#third {
-    background-color: rgb(219, 199, 190)  ;
+.third {
+    background-color: rgb(219, 199, 190);
+}
+
+.fourth {
+    background-color: rgb(167, 206, 203);
+}
+
+
+img {
+    z-index: -1;
 }
 
 main {
-    height:75%;
-    width: 100%;
     display: flex;
-}
-
-.firstweb {
-    display: flex;
+    flex-direction: column;
 }
 
 section {
     display: flex;
-}
-
-section h2 {
-    font-size: 200%;
-} 
-
-footer {
-    height:25%;
-    width: 100%;
-    display: flex;
-}
-
-footer h3 {
-    font-size: 200%;
     flex-direction: row;
 }
 
-
-@media screen and  {
+h2 {
+    display: flex;
+    color:var(--black-text);
+    margin: 0px;
+    padding: 20px;
+    font-size: 250%;
+    border-radius: var(--radius);
+    text-align: center;
+    align-items: center;
     
+}
+
+p {
+    display: flex;
+    font-size: 150%;
+    color:var(--black-text);
+}
+
+footer {
+    display: block;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+li {
+    font-size: 150%;
+    text-decoration: underline;
+    color:var(--black-text);
+}
+
+a.first:hover,
+a.second:hover,
+a.third:hover,
+a.fourth:hover {
+    color:var(--vanilla);
+    background-color: black;
+    border-radius: 0%;
+    font-size: 200%;
 }

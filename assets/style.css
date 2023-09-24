@@ -2,37 +2,66 @@
     --dustyblue: rgb(103, 115, 131);
     --sand: rgb(169, 159, 150);
     --vanilla: rgb(237, 230, 222);
-    --radius: 5%;
+    --nav-radius: 20%;
+    --font-family: monospace;
 }
 
 * {
     padding: 30px 30px;
     margin: auto;
     box-sizing: border-box;
+    background-color:var(--dustyblue);
+    font-family: var(--font-family);
 }
 
 header {
+    display: absolute;
     height: 25%;
     width: 100%;
-    background-color:var(--dustyblue) ;
 }
 
 header h1 {
     font-size: 300%;
 }
 
+header nav  {
+    background-color: var(--sand);
+    border-radius: 10%;
+    align-items: right;
+}
+
+header nav a{
+    text-decoration: none;
+    background-color: var(--vanilla);
+    border-radius: var(--nav-radius) ;
+    padding: 20px 40px;
+    align-items: right;
+}
+
+#first {
+    background-color:rgb(149, 173, 182) ;
+}
+
+#second {
+    background-color: rgb(203, 179, 191)  ;
+}
+
+#third {
+    background-color: rgb(219, 199, 190)  ;
+}
+
 main {
     height:75%;
     width: 100%;
-    background-color: var(--dustyblue);
+    display: flex;
 }
 
 .firstweb {
-    
+    display: flex;
 }
 
 section {
-
+    display: flex;
 }
 
 section h2 {
@@ -42,11 +71,15 @@ section h2 {
 footer {
     height:25%;
     width: 100%;
-    background-color: var(--dustyblue);
+    display: flex;
 }
 
 footer h3 {
     font-size: 200%;
+    flex-direction: row;
 }
 
 
+@media screen and  {
+    
+}

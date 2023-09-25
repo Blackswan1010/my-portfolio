@@ -16,6 +16,7 @@
 html {
     background: url(../assets/images/code-language.jpg) no-repeat center center fixed;
     background-size: cover;
+
 }
 
 body {
@@ -24,9 +25,10 @@ body {
 
 header {
     display: flex;
+    align-items: center;
 }
 
-header h1 {
+h1 {
     display: flex;
     height: 150px;
     align-items: center;
@@ -58,8 +60,8 @@ header h2 {
     border-radius: var(--radius);
     height: 80px;
     width: auto;
-    
-    
+
+
 }
 
 header h3 {
@@ -73,12 +75,13 @@ header h3 {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    justify-content: center;
 }
 
 .firstweb img {
-    width: 900px;
-    height: 600px;
-    transition: 0.5s;
+    width: 800px;
+    height: 500px;
+    transition: all 0.5s;
     border-radius: 5rem;
 }
 
@@ -86,7 +89,7 @@ header h3 {
 .am-i-still-here img {
     width: 300px;
     height: 250px;
-    transition: 0.5s;
+    transition: all 0.5s;
     border-radius: 5rem;
 }
 
@@ -95,13 +98,14 @@ header h3 {
 .tbaproject img:hover,
 .am-i-still-here img:hover {
     filter: opacity(70%);
+    transform: scale(1.05);
 }
 
-header .firstweb,
-header .tbaproject,
-header .am-i-still-here {
+.firstweb,
+.tbaproject,
+.am-i-still-here {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
 }
 
@@ -124,7 +128,6 @@ nav a button {
     color: var(--white);
     border-radius: 50%;
     border: none;
-    position: relative;
     background: var(--black);
     transition: 0.5s;
     width: 150px;
@@ -133,6 +136,7 @@ nav a button {
 
 nav button:hover {
     background-color: var(--dustyblue);
+    transform: scale(1.1);
 }
 
 nav button::after {
@@ -188,7 +192,7 @@ li {
 
 @media screen and (max-width: 1280px) {
     .firstweb img {
-        width: 800px;
+        width: 600px;
         height: 400px;
     }
 
@@ -200,11 +204,31 @@ li {
 
 }
 
+@media screen and (max-width: 992px) {
+
+    .firstweb img {
+        width: 400px;
+        height: 300px;
+    }
+
+    section {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    header .firstweb,
+    header .tbaproject,
+    header .am-i-still-here {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}
+
 @media screen and (max-width: 576px) {
 
     .firstweb img {
-        width: 500px;
-        height: 300px;
+        width: 200px;
+        height: 200px;
     }
 
     .tbaproject img,

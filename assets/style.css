@@ -1,10 +1,11 @@
 :root {
-    --dustyblue: rgb(103, 115, 131);
+    --dustyblue: rgb(149, 173, 182);
     --sand: rgb(169, 159, 150);
     --vanilla: rgb(237, 230, 222);
-    --radius: 100%;
+    --radius: 2rem;
     --font-family: monospace;
-    --black-text:black;
+    --black:black;
+    --white: white;
 }
 
 * {
@@ -17,11 +18,12 @@
 html {
     background: url(./images/code-language.jpg) no-repeat center center fixed;
     background-size: cover;
+    display: flexbox;
 }
 
 body {
-    display: absolute;
     backdrop-filter: blur(10px);
+    display: flexbox;
 }
 
 header {
@@ -31,42 +33,70 @@ header {
 header h1 {
     font-size: 400%;
     background-color: var(--dustyblue);
-    color: var(--black-text);
+    color: var(--black);
     border-radius: var(--radius);
+}
+
+header h2 {
+    background-image: url(./images/digital.gif);
+    background-size: cover;
+    color:var(--white);
+    margin: 0px;
+    padding: 10px;
+    font-size: 250%;
+    border-radius: var(--radius);
+    text-align: center;
+    align-items: center;
 }
 
 nav {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: right;
+    align-items: right;
+    align-content: space-between;
 }
 
 nav a {
-    font-size: 150%;
     text-decoration: none;
-    color: var(--black-text);
-    border-radius: var(--radius);
-    padding: 20px 40px;
-    margin: 0 10px;
-    transition: all 0.5s ease-in-out;
+    margin: 0 -15px;
 }
 
-
-.first {
-    background-color: rgb(149, 173, 182);
+nav a button {
+    cursor: pointer;
+    font-size: 150%;
+    color: var(--white);
+    border-radius: 50%;
+    border: none;
+    position: relative;
+    background: #100720;
+    transition: 0.1s;
+    width: 150px;
+    height: 100px;
 }
 
-.second {
-    background-color: rgb(203, 179, 191);
+nav button:hover {
+    background-color: var(--dustyblue);
 }
 
-.third {
-    background-color: rgb(219, 199, 190);
+nav button::after {
+    content: '';
+    background-image: radial-gradient( circle farthest-corner at 10% 20%, rgba(167, 206, 203, 1) 17.8%,
+    rgba(203, 179, 191, 1) 100.2%);
+    filter: blur(15px);
+    z-index: -1;
+    position: absolute;
+    left: 0;
+    top: 0;
 }
 
-.fourth {
-    background-color: rgb(167, 206, 203);
+nav button:active{
+    transform: scale(0.9) rotate(3deg);
+    background-image: radial-gradient( circle farthest-corner at 10% 20%, rgba(167, 206, 203, 1) 17.8%,
+    rgba(203, 179, 191, 1) 100.2%);
+    border:  5px var(--white);
+    transition: 1s;
 }
-
 
 main {
     display: flex;
@@ -78,22 +108,10 @@ section {
     flex-direction: row;
 }
 
-h2 {
-    display: flex;
-    color:var(--black-text);
-    margin: 0px;
-    padding: 20px;
-    font-size: 250%;
-    border-radius: var(--radius);
-    text-align: center;
-    align-items: center;
-    
-}
-
 p {
     display: flex;
     font-size: 150%;
-    color:var(--black-text);
+    color:var(--black);
 }
 
 footer {
@@ -104,28 +122,15 @@ ul {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    list-style-type: none;
 }
 
 li {
     font-size: 150%;
     text-decoration: underline;
-    color:var(--black-text);
+    color:var(--black);
 }
 
-a.first:hover,
-a.second:hover,
-a.third:hover,
-a.fourth:hover {
-    color:var(--vanilla);
-    background-color: black;
-    border-radius: 50%;
-    font-size: 200%;
-}
-
-a.first:active,
-a.second:active,
-a.third:active,
-a.fourth:active {
-    border-radius: 0%;
-    border: solid 10px rgb(0, 0, 180);
+@media screen and  {
+    
 }

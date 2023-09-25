@@ -1,10 +1,8 @@
 :root {
     --dustyblue: rgb(149, 173, 182);
-    --sand: rgb(169, 159, 150);
-    --vanilla: rgb(237, 230, 222);
-    --radius: 2rem;
+    --radius: 1.5rem;
     --font-family: monospace;
-    --black:black;
+    --black: black;
     --white: white;
 }
 
@@ -16,14 +14,12 @@
 
 
 html {
-    background: url(./images/code-language.jpg) no-repeat center center fixed;
+    background: url(../assets/images/code-language.jpg) no-repeat center center fixed;
     background-size: cover;
-    display: flexbox;
 }
 
 body {
     backdrop-filter: blur(10px);
-    display: flexbox;
 }
 
 header {
@@ -31,22 +27,82 @@ header {
 }
 
 header h1 {
+    display: flex;
+    height: 150px;
+    align-items: center;
     font-size: 400%;
     background-color: var(--dustyblue);
     color: var(--black);
     border-radius: var(--radius);
+
 }
 
+header h1 img {
+    margin-left: -35px;
+    width: 210px;
+    height: 200px;
+    border-radius: 100%;
+}
+
+
 header h2 {
-    background-image: url(./images/digital.gif);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../assets/images/digital.gif);
     background-size: cover;
-    color:var(--white);
+    color: var(--white);
     margin: 0px;
-    padding: 10px;
+    padding: 0px 20px;
     font-size: 250%;
     border-radius: var(--radius);
-    text-align: center;
-    align-items: center;
+    height: 80px;
+    width: auto;
+    
+    
+}
+
+header h3 {
+    display: flex;
+    justify-content: center;
+    font-size: 180%;
+    flex-direction: column;
+}
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.firstweb img {
+    width: 900px;
+    height: 600px;
+    transition: 0.5s;
+    border-radius: 5rem;
+}
+
+.tbaproject img,
+.am-i-still-here img {
+    width: 300px;
+    height: 250px;
+    transition: 0.5s;
+    border-radius: 5rem;
+}
+
+
+.firstweb img:hover,
+.tbaproject img:hover,
+.am-i-still-here img:hover {
+    filter: opacity(70%);
+}
+
+header .firstweb,
+header .tbaproject,
+header .am-i-still-here {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 nav {
@@ -69,10 +125,10 @@ nav a button {
     border-radius: 50%;
     border: none;
     position: relative;
-    background: #100720;
-    transition: 0.1s;
+    background: var(--black);
+    transition: 0.5s;
     width: 150px;
-    height: 100px;
+    height: 75px;
 }
 
 nav button:hover {
@@ -81,37 +137,36 @@ nav button:hover {
 
 nav button::after {
     content: '';
-    background-image: radial-gradient( circle farthest-corner at 10% 20%, rgba(167, 206, 203, 1) 17.8%,
-    rgba(203, 179, 191, 1) 100.2%);
+    background-image: radial-gradient(circle farthest-corner at 10% 20%, rgba(167, 206, 203, 1) 17.8%,
+            rgba(203, 179, 191, 1) 100.2%);
     filter: blur(15px);
-    z-index: -1;
     position: absolute;
     left: 0;
     top: 0;
 }
 
-nav button:active{
+nav button:active {
     transform: scale(0.9) rotate(3deg);
-    background-image: radial-gradient( circle farthest-corner at 10% 20%, rgba(167, 206, 203, 1) 17.8%,
-    rgba(203, 179, 191, 1) 100.2%);
-    border:  5px var(--white);
+    background-image: radial-gradient(circle farthest-corner at 10% 20%, rgba(167, 206, 203, 1) 17.8%,
+            rgba(203, 179, 191, 1) 100.2%);
+    border: 5px var(--white);
     transition: 1s;
 }
 
 main {
-    display: flex;
+    display: block;
     flex-direction: column;
 }
 
 section {
     display: flex;
-    flex-direction: row;
 }
+
 
 p {
     display: flex;
     font-size: 150%;
-    color:var(--black);
+    color: var(--black);
 }
 
 footer {
@@ -128,9 +183,46 @@ ul {
 li {
     font-size: 150%;
     text-decoration: underline;
-    color:var(--black);
+    color: var(--black);
 }
 
-@media screen and  {
-    
+@media screen and (max-width: 1280px) {
+    .firstweb img {
+        width: 800px;
+        height: 400px;
+    }
+
+    .tbaproject img,
+    .am-i-still-here img {
+        width: 400px;
+        height: 300px;
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+
+    .firstweb img {
+        width: 500px;
+        height: 300px;
+    }
+
+    .tbaproject img,
+    .am-i-still-here img {
+        width: 200px;
+        height: 200px;
+    }
+
+    section {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    header .firstweb,
+    header .tbaproject,
+    header .am-i-still-here {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
 }

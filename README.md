@@ -72,14 +72,20 @@ The css code above makes the navigation bar responsive to the user when the curs
 
 
 ## My Webpage Image Usage Sample
+
+A respsonsive navigation bar with the "zoom"(transform property) effect and color change when cursoring is hovering.
 <br/>
-A respsonsive navigation bar with the "zoom"(transform property) effect and color change when cursoring is hovering
-![Top Header with a responsive nav button](assets/images/header-portfolio-sample.png)
-<br/>
-A responsive image linked with the developer's first web application/project with the blur and "zoom"(transform property) effect when cursor is hovering.
-![Work with a respsonsive image link](assets/images/work-portfolio-sample.png)
 <br/>
 
+![Top Header with a responsive nav button](./assets/images/header-portfolio-sample.png)
+<br/>
+
+A responsive image linked with the developer's first web application/project with the blur and "zoom"(transform property) effect when cursor is hovering.
+<br/>
+<br/>
+
+![Work with a respsonsive image link](./assets/images/work-portfolio-sample.png)
+<br/>
 
 ## Learning Points
 

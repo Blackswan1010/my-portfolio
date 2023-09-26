@@ -153,7 +153,7 @@ nav button:active {
     transform: scale(0.9) rotate(3deg);
     background-image: radial-gradient(circle farthest-corner at 10% 20%, rgba(167, 206, 203, 1) 17.8%,
             rgba(203, 179, 191, 1) 100.2%);
-    border: 5px var(--white);
+    border: 5px solid var(--white);
     transition: 1s;
 }
 

@@ -12,7 +12,7 @@
 
 Creating my webpage portfolio with HTML and CSS!
 
-Deployed Site []()
+Deployed Site [https://blackswan1010.github.io/my-portfolio/](https://blackswan1010.github.io/my-portfolio/)
 
 ## Webpage Sample Code
 

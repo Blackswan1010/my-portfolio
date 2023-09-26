@@ -16,11 +16,12 @@ Deployed Site []()
 
 ## Webpage Sample Code
 
-|-----------HTML--------------|
+#### HTML
 
 ```html
     <header>
-        <a href="https://github.com/Blackswan1010" style="text-decoration: none;"><h1><img src="./assets/images/my-pic.jpg" alt="ME" />Anthony Nguyen</h1></a>
+        <a href="https://github.com/Blackswan1010" style="text-decoration: none;">
+        <h1><img src="./assets/images/my-pic.jpg" alt="ME" />Anthony Nguyen</h1></a>
     </header>
 
     <nav>
@@ -31,9 +32,9 @@ Deployed Site []()
     </nav>
 ```
 
-In this html code is base structure of the portfolio header, with the header containing a recent photo of the developer and developer's name, and the navigation bar for the portfolio.
+In this html code is the base structure of the portfolio header, with the header containing a recent photo of the developer and developer's name, and the navigation bar for the portfolio.
 
-|-------------CSS--------------|
+#### CSS
 ```css
     :root {
     --dustyblue: rgb(149, 173, 182);
@@ -72,10 +73,10 @@ The css code above makes the navigation bar responsive to the user when the curs
 
 ## My Webpage Image Usage Sample
 <br/>
-
+A respsonsive navigation bar with the "zoom"(transform property) effect and color change when cursoring is hovering
 ![Top Header with a responsive nav button](assets/images/header-portfolio-sample.png)
 <br/>
-
+A responsive image linked with the developer's first web application/project with the blur and "zoom"(transform property) effect when cursor is hovering.
 ![Work with a respsonsive image link](assets/images/work-portfolio-sample.png)
 <br/>
 
